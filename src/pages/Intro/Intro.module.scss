@@ -1,0 +1,80 @@
+.intro-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgb(192, 164, 249), rgb(149, 172, 249));
+    padding: 50px;
+
+    .intro-logo-section {
+        .intro-logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            img {
+                width: 300px;
+            }
+
+            h1 {
+                color: #fff;
+                font-size: 30px;
+            }
+        }
+
+        .intro-btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .intro-login-btn {
+                height: 50px;
+                width: 200px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                border: 1px solid #fff;
+                color: #000;
+                background: #fff;
+                font-size: 18px;
+                transition: all 400ms;
+                cursor: pointer;
+
+                &:hover {
+                    background: transparent;
+                    color: #fff;
+                }
+            }
+
+            .intro-sign-up-btn {
+                height: 50px;
+                width: 200px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                border: 1px solid #fff;
+                color: #fff;
+                background: transparent;
+                font-size: 18px;
+                transition: all 400ms;
+                cursor: pointer;
+
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .intro-guest-section {
+        p {
+            text-decoration: underline;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
